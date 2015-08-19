@@ -1,0 +1,185 @@
+.primary-navigation {
+    @include setThemeColor(background-color);
+    display: none;
+    overflow: hidden;
+    
+    @media #{$xlarge-up} {
+        @include box-shadow(0 2px 2px -2px rgba($black, 1));
+        display: block;
+    }
+    
+    ol {
+        @include clear;
+        margin: 0 (-$gutter/2);
+
+        > li {
+            float: left;
+            height: 50px;
+            margin: 0;
+            list-style-type: none;
+            font-size: rem-calc(16);
+            @include box-sizing(border-box);
+
+            &.-active,
+            &.-wiki {
+                position: relative;
+            
+                &:after {
+                    content: "";
+                    z-index: 1;
+                    position: absolute;
+                    top: 10px;
+                    right: $gutter/2;
+                    bottom: 10px;
+                    left: $gutter/2;
+                    background: rgba($white, .25);
+                    border-top: 1px solid rgba($black, .25);
+                    border-right: 1px solid rgba($white, .25);
+                    border-bottom: 1px solid rgba($white, .25);
+                    border-left: 1px solid rgba($black, .25);
+                }
+                
+                .primary-navigation__link {
+                    padding: 0 $gutter;
+                }
+            }
+            
+            &.-wiki {
+            
+                &:after {
+                    background-color: $white;
+                }
+                
+                a {
+                    @include setThemeColor(color);
+                }
+            }
+        }
+    }
+    
+    &__link {
+        z-index: 2;
+        position: relative;
+        display: block;
+        padding: 0 $gutter/1.25;
+        color: $white;
+        text-decoration: none;
+        line-height: 50px;
+        
+        @include hasTheme {
+            color: $header-color;
+        }
+        
+        &:hover {
+            position: relative;
+            color: $white;
+        
+            &:after {
+                @include box-sizing(border-box);
+                @include setThemeColor(border-bottom-color, $prefix: style);
+                content: "";
+                z-index: -1;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background: rgba($white, .25);
+                border: 0;
+                border-bottom: {
+                    width: 4px;
+                    style: solid;
+                };
+                
+                @include hasTheme {
+                    border-bottom-color: $black;
+                }
+                
+                .-active &,
+                .-wiki & {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.mobile-navigation {
+    @include translateX(-100%);
+    @include setThemeColor(background-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    background: $gray;
+    
+    ol {
+        border-top: 2px solid rgba($black, .15);
+    
+        li {
+            border-bottom: 2px solid rgba($black, .15);
+            
+            &.-active,
+            &.-where-to-buy {
+                position: relative;
+            
+                &:after {
+                    content: "";
+                    z-index: -1;
+                    position: absolute;
+                    top: 4px;
+                    right: $gutter/2;
+                    bottom: 4px;
+                    left: $gutter/2;
+                    background: rgba($white, .25);
+                    border-top: 1px solid rgba($black, .25);
+                    border-right: 1px solid rgba($white, .25);
+                    border-bottom: 1px solid rgba($white, .25);
+                    border-left: 1px solid rgba($black, .25);
+                }
+            }
+            
+            &.-where-to-buy {
+            
+                &:after {
+                    background: $white;
+                }
+                
+                a {
+                    color: $black !important;
+                }
+            }
+            
+            a {
+                display: block;
+                padding: $distance/2 $gutter;
+                body.theme0 & {
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+.sub-navigation {
+
+    li {
+        position: relative;
+
+        & + li {
+            margin-top: $distance/2;
+        }
+
+        a {
+            display: block;
+            padding-left: $gutter;
+        }
+    }
+
+    .icon {
+        position: absolute;
+        top: 4px;
+        left: 0;
+    }
+}

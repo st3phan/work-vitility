@@ -1,0 +1,23 @@
+/* Din Web Pro Bold */
+@font-face {
+    font-family: 'Din';
+    src: url('../fonts/din_web_pro_regular-webfont.eot');
+    src: url('../fonts/din_web_pro_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/din_web_pro_regular-webfont.woff') format('woff'),
+         url('../fonts/din_web_pro_regular-webfont.ttf') format('truetype'),
+         url('../fonts/din_web_pro_regular-webfont.svg#din_web_pro_regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Din Web Pro Bold */
+@font-face {
+    font-family: 'Din';
+    src: url('../fonts/din_web_pro_bold-webfont.eot');
+    src: url('../fonts/din_web_pro_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/din_web_pro_bold-webfont.woff') format('woff'),
+         url('../fonts/din_web_pro_bold-webfont.ttf') format('truetype'),
+         url('../fonts/din_web_pro_bold-webfont.svg#din_web_pro_bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}

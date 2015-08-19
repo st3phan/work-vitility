@@ -1,0 +1,38 @@
+.slider {
+    @include clear;
+    clear: both;
+    padding-top: 10px;
+    text-align: center;
+    line-height: 25px;
+    
+    &__container {
+        clear: both;
+        margin: 0 9px $distance 17px;
+    }
+    
+    &__input {
+    
+        &__value {
+            float: left;
+            
+            &.-upper {
+                float: right;
+            }
+        
+            input {
+                @include form-element;
+                width: 65px;
+                height: 25px;
+                padding: 0 5px;
+            }
+            
+            &__valuta {
+                font-weight: bold;
+            }
+        }
+        
+        &__divider {
+            color: $silver;
+        }
+    }
+}

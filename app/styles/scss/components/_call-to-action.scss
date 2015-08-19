@@ -1,0 +1,43 @@
+.cta {
+    @include box-sizing(border-box);
+    @include box-shadow(0 2px 2px -1px rgba($black, .8));
+    @include clear;
+    border: 1px solid $concrete;
+    background: $white;
+
+    
+    &__visual {
+        @include background-size(cover);
+        @include box-sizing(border-box);
+        position: relative;
+        height: 90px;
+        padding: $distance $gutter;
+        background-repeat: no-repeat;
+    }
+    
+    &__wrapper {
+        @include box-sizing(border-box);
+        overflow: hidden;
+        margin: $distance 0;
+        padding: 0 $gutter;
+        
+        .btn {
+            margin-top: $distance;
+        }
+    }
+    
+    &__hdr {
+        @extend .like-h4;
+        margin-bottom: $distance/3;
+    }
+    
+    &.-find-store {
+        
+        form {
+            width: 100%;
+            max-width: 300px;
+            margin-top: $distance;
+            height: 40px;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px"
+	 height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+<g id="_x32__rond" display="none">
+	<path display="inline" d="M16,0C7.163,0,0,7.163,0,16s7.163,16,16,16s16-7.163,16-16S24.837,0,16,0z M16,29C8.82,29,3,23.18,3,16
+		C3,8.82,8.82,3,16,3c7.18,0,13,5.82,13,13C29,23.18,23.18,29,16,29z"/>
+	<path display="inline" d="M13.906,22.74c-0.733,0.571-1.854,0.147-1.854-0.744l-0.001-11.992c0-0.891,1.12-1.316,1.854-0.745
+		l7.396,5.666c0.733,0.571,0.733,1.503,0,2.075L13.906,22.74z"/>
+</g>
+<g id="_x31__hoekig">
+	<path d="M16,0C7.163,0,0,7.163,0,16s7.163,16,16,16s16-7.163,16-16S24.837,0,16,0z M16,29C8.82,29,3,23.18,3,16
+		C3,8.82,8.82,3,16,3c7.18,0,13,5.82,13,13C29,23.18,23.18,29,16,29z"/>
+	<polygon points="12,8 23,16 12,24 	"/>
+</g>
+<g id="kader">
+	<rect opacity="0" fill="none" stroke="#000000" stroke-miterlimit="10" width="32" height="32"/>
+</g>
+</svg>

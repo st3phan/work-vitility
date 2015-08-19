@@ -1,0 +1,47 @@
+.p-home {
+
+    main {
+        padding-bottom: 0;
+    }
+
+    &__fold {
+        @include box-shadow(inset 0 3px 3px -3px rgba($black, .6));
+        margin: $distance*2 0 (-$distance);
+        padding: $distance*1.5 0;
+        background-color: $concrete;
+        
+        .cta {
+            margin-bottom: $distance;
+        }
+    }
+    
+    .footer-main__payment {
+        @extend .footer-main__payment.-noborder;
+    }
+}
+
+.portal {
+    margin-bottom: (-$distance*1.5);
+    
+    .product-category {
+        margin-bottom: $distance*1.5;
+        
+        @media #{$xlarge-up} {
+            height: 200px;
+        }
+    }
+    
+    .cta {
+        @media #{$xlarge-up} {
+            height: 200px;
+        }
+        
+        &__wrapper {
+        
+            @media #{$xlarge-up} {
+                height: (200px-90px)-($distance*2);
+            }
+        }
+    }
+}
+

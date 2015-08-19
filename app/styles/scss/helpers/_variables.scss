@@ -1,0 +1,172 @@
+$rem-base: 16px !default;
+$base-font-size: 100% !default;
+$base-line-height: 20px !default;
+
+// Grid
+$cols: 12 !default;
+$gutter: 20px !default;
+$push: false !default;
+$pull: false !default;
+$grid-class: '.row' !default;
+$grid-item-class: '.col' !default;
+
+// Media Query Ranges
+$small-range: (min: 0, max: 30em);
+$medium-range: ('min': 30em, max: 46.25em);
+$large-range: (min: 46.25em, max: 64em);
+$xlarge-range: (min: 64em, max: 75em);
+$full-range: (min: 75em, max: 9999999999em);
+
+$screen: "only screen";
+
+$landscape: "#{$screen} and (orientation: landscape)";
+$portrait: "#{$screen} and (orientation: portrait)";
+
+$small-up: $screen;
+$small-only: "#{$screen} and (max-width:#{map-get($small-range, max)})";
+
+$medium-up: "#{$screen} and (min-width:#{map-get($medium-range, min)})";
+$medium-only: "#{$screen} and (min-width:#{map-get($medium-range, min)}) and (max-width:#{map-get($medium-range, max)})";
+
+$large-up: "#{$screen} and (min-width:#{map-get($large-range, min)})";
+$large-only: "#{$screen} and (min-width:#{map-get($large-range, max)}) and (max-width:#{map-get($large-range, max)})";
+
+$xlarge-up: "#{$screen} and (min-width:#{map-get($xlarge-range, min)})";
+$xlarge-only: "#{$screen} and (min-width:#{map-get($xlarge-range, max)}) and (max-width:#{map-get($xlarge-range, max)})";
+
+$full-up: "#{$screen} and (min-width:#{map-get($full-range, min)})";
+$full-only: "#{$screen} and (min-width:#{map-get($full-range, max)}) and (max-width:#{map-get($full-range, max)})";
+
+$gutter: 20px !default;
+$distance: 20px !default;
+
+$push: true !default;
+$pull: true !default;
+
+                        
+$max-page-width: 940px !default;
+
+// colors
+$white: #fff !default;
+$black: #000 !default;
+
+// grays
+$concrete: #f3f3f3;
+$concreteDark: mix($concrete, $black, 90%);
+$concreteLight: mix($concrete, $white, 75%);
+$mercury: #e8e8e8;
+$mercuryDark: mix($mercury, $black, 90%);
+$mercuryLight: mix($mercury, $white, 75%);
+$alto: #d0d0d0;
+$altoDark: mix($alto, $black, 90%);
+$altoLight: mix($alto, $white, 75%);
+$silver: #a1a1a1;
+$silverDark: mix($silver, $black, 90%);
+$silverLight: mix($silver, $white, 75%);
+$gray: #2b2b2b;
+$grayExtraDark: mix($gray, $black, 80%);
+$grayDark: mix($gray, $black, 90%);
+$grayLight: mix($gray, $white, 75%);
+
+// theme colors
+$blue: #049ce3;
+$blueExtraDark: mix($blue, $black, 80%);
+$blueDark: mix($blue, $black, 90%);
+$blueLight: mix($blue, $white, 75%);
+$green: #8dc53e;
+$greenExtraDark: mix($green, $black, 80%);
+$greenDark: mix($green, $black, 90%);
+$greenLight: mix($green, $white, 75%);
+$yellow: #ffca05;
+$yellowExtraDark: mix($yellow, $black, 80%);
+$yellowDark: mix($yellow, $black, 90%);
+$yellowLight: mix($yellow, $white, 75%);
+$orange: #f7931e;
+$orangeExtraDark: mix($orange, $black, 80%);
+$orangeDark: mix($orange, $black, 90%);
+$orangeLight: mix($orange, $white, 75%);
+$red: #ff0000;
+$redExtraDark: mix($red, $black, 80%);
+$redDark: mix($red, $black, 90%);
+$redLight: mix($red, $white, 75%);
+$pink: #f90997;
+$pinkExtraDark: mix($pink, $black, 80%);
+$pinkDark: mix($pink, $black, 90%);
+$pinkLight: mix($pink, $white, 75%);
+
+$text-color: #4b4b4b;
+$header-color: #252525;
+$sub-header-color: #242424;
+$link-color: #242424;
+$link-hover-color: #000;
+
+$theme-colors: (
+    0: (
+        normal: $gray,
+        light: $grayLight,
+        extraDark: $grayExtraDark,
+        dark: $grayDark,
+        text: $white,
+    ),
+    1: (
+        normal: $pink,
+        light: $pinkLight,
+        extraDark: $pinkExtraDark,
+        dark: $pinkDark,
+        text: $sub-header-color,
+    ),
+    2: (
+        normal: $red,
+        light: $redLight,
+        extraDark: $redExtraDark,
+        dark: $redDark,
+        text: $sub-header-color,
+    ),
+    3: (
+        normal: $orange,
+        light: $orangeLight,
+        extraDark: $orangeExtraDark,
+        dark: $orangeDark,
+        text: $sub-header-color,
+    ),
+    4: (
+        normal: $yellow,
+        light: $yellowLight,
+        extraDark: $yellowExtraDark,
+        dark: $yellowDark,
+        text: $sub-header-color,
+    ),
+    5: (
+        normal: $green,
+        light: $greenLight,
+        extraDark: $greenExtraDark,
+        dark: $greenDark,
+        text: $sub-header-color,
+    ),
+    6: (
+        normal: $blue,
+        light: $blueLight,
+        extraDark: $blueExtraDark,
+        dark: $blueDark,
+        text: $sub-header-color,
+    )
+) !default;
+
+// Type
+$font-stack: 'Din', Helvetica, Arial, sans-serif;
+
+/* http://en.wikipedia.org/wiki/Point_(typography) */
+$canon: 48px;
+$double-paragon: 40px;
+$double-great-primer: 36px;
+$four-line-brevier: 32px;
+$five-line-nonpareil: 30px;
+$double-english: 28px;
+$double-pica: 24px;
+$paragon: 20px;
+$great-primer: 18px;
+$columbian: 16px;
+$english: 14px;
+$pica: 12px;
+
+$header-line-height: 1.2 !default;

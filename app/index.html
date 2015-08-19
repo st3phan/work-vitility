@@ -1,0 +1,817 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+        <meta name="description" content="">
+
+        <!-- build:css styles/main.min.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+
+        <script>
+            var WWWROOT = '';
+        </script>
+
+        <!-- build:js js/head.min.js -->
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <!-- endbuild -->
+    </head>
+    <body class="p-home theme0">
+
+        <!--[if lt IE 9]>
+        <style>
+            body * { display: none; }
+            .outdated, .outdated * { display: block; }
+        </style>
+        <div class="outdated">
+            <p class="page">Uw browser is verouderd. <a href="http://browsehappy.com/">Vernieuw vandaag nog je browser</a> voor een betere ervaring met deze en andere websites.</p>
+        </div>
+        <![endif]-->
+
+        <div class="doc">
+
+            <header>
+
+                <nav class="masthead">
+                    <div class="l-wrapper">
+
+                        <div class="row">
+                            <div class="col large-one-sixth">
+
+                                <div class="language-select js-language-select">
+                                    <div class="custom-select">
+                                        <ul>
+                                            <li><a href="#" class="nl"><span>Nederlands</span></a></li>
+                                            <li><a href="#" class="en"><span>English</span></a></li>
+                                            <li><a href="#" class="fr"><span>Français</span></a></li>
+                                        </ul>
+                                        <select>
+                                            <option value="0">Nederlands</option>
+                                            <option value="1">English</option>
+                                            <option value="2">Français</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col large-one-sixth">
+
+                                <div class="valuta-select js-valuta-select">
+                                    <div class="custom-select">
+                                        <ul>
+                                            <li><a href="#"><span class="valuta">&euro;</span> Euro</a></li>
+                                            <li><a href="#"><span class="valuta">&#36;</span> Dollar</a></li>
+                                            <li><a href="#"><span class="valuta">&pound;</span> Pound</a></li>
+                                            <li><a href="#"><span class="valuta">&yen;</span> Yen</a></li>
+                                        </ul>
+                                        <select>
+                                            <option value="">Euro</option>
+                                            <option value="">Dollar</option>
+                                            <option value="">Pound</option>
+                                            <option value="">Yen</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col large-four-sixths">
+                                <ul class="masthead__account js-masthead-navigation">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="text.html">Klantenservice</a></li>
+                                    <li><a href="text.html">Verlanglijstje</a></li>
+                                    <li><a href="text.html">Mijn account</a></li>
+                                    <li class="-where-to-buy"><a href="text.html" class="button medium inverse"><span>Waar te koop?</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </nav>
+
+                <div class="l-wrapper">
+                    <div class="primary-header">
+
+                        <div class="primary-header__toggle-navigation js-mobile-navigation-toggle">
+                            <svg class="icon icon-hamburger">
+                                <use xlink:href="images/svg/sprite/sprite.svg#icon-hamburger"></use>
+                            </svg>
+                        </div>
+
+                        <div class="primary-header__brand" itemscope itemtype="http://schema.org/Organization">
+                            <a href="index.html" itemprop="url">
+                                <svg class="icon icon-logo">
+                                    <use xlink:href="images/svg/sprite/sprite.svg#icon-logo"></use>
+                                </svg>
+                                <img src="images/logo.png" alt="" class="svg-fallback" />
+                            </a>
+                        </div>
+
+                        <a href="#basket" class="primary-header__basket js-sidebar-toggle">
+                            <span class="primary-header__basket__icon -has-items icon-basket"></span>
+                            <div class="primary-header__basket__wrapper">
+                                <span class="primary-header__basket__header">Winkeltas</span>
+                                <span class="primary-header__basket__price">&euro;39,38</span>
+                                <span class="primary-header__basket__amount">2 producten</span>
+                            </div>
+                            <span class="primary-header__basket__toggle -open">
+                                <svg class="icon-triangle-right">
+                                    <use xlink:href="images/svg/sprite/sprite.svg#icon-triangle-right"></use>
+                                </svg>
+                            </span>
+                            <span class="primary-header__basket__toggle -close">
+                                <svg class="icon-triangle-left">
+                                    <use xlink:href="images/svg/sprite/sprite.svg#icon-triangle-left"></use>
+                                </svg>
+                            </span>
+                        </a>
+
+                        <form method="post" action="#" class="primary-header__search search-box">
+                            <button type="submit">
+                                <svg class="icon-search">
+                                    <use xlink:href="images/svg/sprite/sprite.svg#icon-search"></use>
+                                </svg>
+                            </button>
+                            <div class="input"><input type="search" name="" value="" placeholder="Zoeken…" /></div>
+                        </form>
+
+                    </div>
+                </div>
+
+                <nav class="primary-navigation">
+                    <div class="l-wrapper">
+                        <ol class="js-primary-navigation">
+                            <li class="style2"><a href="category.html" class="primary-navigation__link">Bed & Bad</a></li>
+                            <li class="style3"><a href="product.html" class="primary-navigation__link">Household & Living</a></li>
+                            <li class="style4 -active"><a href="cart.html" class="primary-navigation__link">Office & Leisure</a></li>
+                            <li class="style5"><a href="checkout.html" class="primary-navigation__link">Mobility</a></li>
+                            <li class="style6"><a href="finalize.html" class="primary-navigation__link">Kitchen & Dining</a></li>
+                            <li class="style1"><a href="dealer-overview.html" class="primary-navigation__link">Health & Fitness</a></li>
+                            <li class="style1 -wiki"><a href="text.html" class="primary-navigation__link"><span>Wiki</span></a></li>
+                        </ol>
+                    </div>
+                </nav>
+
+                <div class="carousel" style="background-image: url(images/tmp/carousel1.jpg);">
+                </div>
+
+            </header>
+
+            <main role="main">
+
+                <div class="l-wrapper">
+
+                    <section class="row portal">
+
+                        <div class="col xlarge-one-half">
+                            <article class="product-category style1">
+                                <div class="product-category__vsl">
+                                    <img src="images/tmp/200x200.gif" alt="" />
+                                    <span class="product-category__icon">
+                                        <svg role="presentation" class="icon icon-icon">
+                                            <use xlink:href="images/svg/sprite/sprite-colored.svg#icon-icon1"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="product-category__wrapper">
+                                    <h1 class="like-h3 product-category__header">Bad &amp; Bed</h1>
+                                    <ul class="product-category__list">
+                                        <li>
+                                            <a href="category.html">
+                                                <svg role="presentation" class="icon icon-arrow-right">
+                                                    <use xlink:href="images/svg/sprite/sprite.svg#icon-arrow-right"></use>
+                                                </svg>
+                                                Accessoires blab p a asdkj sdka asdkjdsakadkjs
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="category.html">
+                                                <svg role="presentation" class="icon icon-arrow-right">
+                                                    <use xlink:href="images/svg/sprite/sprite.svg#icon-arrow-right"></use>
+                                                </svg>
+                                                Persoonlijke verzorging
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="category.html">
+                                                <svg role="presentation" class="icon icon-arrow-right">
+                                                    <use xlink:href="images/svg/sprite/sprite.svg#icon-arrow-right"></use>
+                                                </svg>
+                                                Wassen zonder water
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <a href="category.html" class="product-category__more">
+                                        <svg role="presentation" class="icon icon-arrow-right">
+                                            <use xlink:href="images/svg/sprite/sprite.svg#icon-arrow-right"></use>
+                                        </svg>
+                                        Meer Bad &amp; Bed
+                                    </a>
+                                </div>
+                                <span class="product-category__icon">
+                                    <svg role="presentation" class="icon icon-icon">
+                                        <use xlink:href="images/svg/sprite/sprite-colored.svg#icon-icon1"></use>
+                                    </svg>
+                                </span>
+                            </article>
+                        </div>
+
+                        <div class="col xlarge-one-half">
+                            <article class="product-category style2">
+                                <div class="product-category__vsl"><img src="images/tmp/200x200.gif" alt="" /></div>
+                                <div class="product-category__wrapper">
+                                    <h1 class="like-h3 product-category__header">Bad &amp; Bed</h1>
+                                    <ul class="product-category__list">
+                                        <li>
+                                            <a href="category.html">
+                                                <svg role="presentation" class="icon icon-arrow-right">
+                                                    <use xlink:href="images/svg/sprite/sprite.svg#icon-arrow-right"></use>
+                                                </svg>
+                                                Accessoires blab p a asdkj sdka asdkjdsakadkjs
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="category.html">
+                                                <svg role="presentation" class="icon icon-arrow-right">
+                                                    <use xlink:href="images/svg/sprite/sprite.svg#icon-arrow-right"></use>
+                                                </svg>
+                                                Persoonlijke verzorging
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="category.html">
+                                                <svg role="presentation" class="icon icon-arrow-right">
+                                                    <use xlink:href="images/svg/sprite/sprite.svg#icon-arrow-right"></use>
+                                                </svg>
+                                                Wassen zonder water
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <a href="category.html" class="product-category__more">
+                                        <svg role="presentation" class="icon icon-arrow-right">
+                                            <use xlink:href="images/svg/sprite/sprite.svg#icon-arrow-right"></use>
+                                        </svg>
+                                        Meer Bad &amp; Bed
+                                    </a>
+                                </div>
+                                <span class="product-category__icon">
+                                    <svg role="presentation" class="icon icon-icon">
+                                        <use xlink:href="images/svg/sprite/sprite-colored.svg#icon-icon2"></use>
+                                    </svg>
+                                </span>
+                            </article>
+                        </div>
+
+                        <div class="col xlarge-one-half">
+                            <article class="product-category style3">
+                                <div class="product-category__vsl"><img src="images/tmp/200x200.gif" alt="" /></div>
+                                <div class="product-category__wrapper">
+                                    <h1 class="like-h3 product-category__header">Bad &amp; Bed</h1>
+                                    <ul class="product-category__list">
+                                        <li>
+                                            <a href="category.html">
+                                                <svg role="presentation" class="icon icon-arrow-right">
+                                                    <use xlink:href="images/svg/sprite/sprite.svg#icon-arrow-right"></use>
+                                                </svg>
+                                                Accessoires blab p a asdkj sdka asdkjdsakadkjs
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="category.html">
+                                                <svg role="presentation" class="icon icon-arrow-right">
+                                                    <use xlink:href="images/svg/sprite/sprite.svg#icon-arrow-right"></use>
+                                                </svg>
+                                                Persoonlijke verzorging
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="category.html">
+                                                <svg role="presentation" class="icon icon-arrow-right">
+                                                    <use xlink:href="images/svg/sprite/sprite.svg#icon-arrow-right"></use>
+                                                </svg>
+                                                Wassen zonder water
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <a href="category.html" class="product-category__more">
+                                        <svg role="presentation" class="icon icon-arrow-right">
+                                            <use xlink:href="images/svg/sprite/sprite.svg#icon-arrow-right"></use>
+                                        </svg>
+                                        Meer Bad &amp; Bed
+                                    </a>
+                                </div>
+                                <span class="product-category__icon">
+                                    <svg role="presentation" class="icon icon-icon">
+                                        <use xlink:href="images/svg/sprite/sprite-colored.svg#icon-icon3"></use>
+                                    </svg>
+                                </span>
+                            </article>
+                        </div>
+
+                        <div class="col xlarge-one-half">
+                            <article class="product-category style4">
+                                <div class="product-category__vsl"><img src="images/tmp/200x200.gif" alt="" /></div>
+                                <div class="product-category__wrapper">
+                                    <h1 class="like-h3 product-category__header">Bad &amp; Bed</h1>
+                                    <ul class="product-category__list">
+                                        <li>
+                                            <a href="category.html">
+                                                <svg role="presentation" class="icon icon-arrow-right">
+                                                    <use xlink:href="images/svg/sprite/sprite.svg#icon-arrow-right"></use>
+                                                </svg>
+                                                Accessoires blab p a asdkj sdka asdkjdsakadkjs
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="category.html">
+                                                <svg role="presentation" class="icon icon-arrow-right">
+                                                    <use xlink:href="images/svg/sprite/sprite.svg#icon-arrow-right"></use>
+                                                </svg>
+                                                Persoonlijke verzorging
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="category.html">
+                                                <svg role="presentation" class="icon icon-arrow-right">
+                                                    <use xlink:href="images/svg/sprite/sprite.svg#icon-arrow-right"></use>
+                                                </svg>
+                                                Wassen zonder water
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <a href="category.html" class="product-category__more">
+                                        <svg role="presentation" class="icon icon-arrow-right">
+                                            <use xlink:href="images/svg/sprite/sprite.svg#icon-arrow-right"></use>
+                                        </svg>
+                                        Meer Bad &amp; Bed
+                                    </a>
+                                </div>
+                                <span class="product-category__icon">
+                                    <svg role="presentation" class="icon icon-icon">
+                                        <use xlink:href="images/svg/sprite/sprite-colored.svg#icon-icon4"></use>
+                                    </svg>
+                                </span>
+                            </article>
+                        </div>
+
+                        <div class="col xlarge-one-half">
+                            <article class="product-category style5">
+                                <div class="product-category__vsl"><img src="images/tmp/200x200.gif" alt="" /></div>
+                                <div class="product-category__wrapper">
+                                    <h1 class="like-h3 product-category__header">Bad &amp; Bed</h1>
+                                    <ul class="product-category__list">
+                                        <li>
+                                            <a href="category.html">
+                                                <svg role="presentation" class="icon icon-arrow-right">
+                                                    <use xlink:href="images/svg/sprite/sprite.svg#icon-arrow-right"></use>
+                                                </svg>
+                                                Accessoires blab p a asdkj sdka asdkjdsakadkjs
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="category.html">
+                                                <svg role="presentation" class="icon icon-arrow-right">
+                                                    <use xlink:href="images/svg/sprite/sprite.svg#icon-arrow-right"></use>
+                                                </svg>
+                                                Persoonlijke verzorging
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="category.html">
+                                                <svg role="presentation" class="icon icon-arrow-right">
+                                                    <use xlink:href="images/svg/sprite/sprite.svg#icon-arrow-right"></use>
+                                                </svg>
+                                                Wassen zonder water
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <a href="category.html" class="product-category__more">
+                                        <svg role="presentation" class="icon icon-arrow-right">
+                                            <use xlink:href="images/svg/sprite/sprite.svg#icon-arrow-right"></use>
+                                        </svg>
+                                        Meer Bad &amp; Bed
+                                    </a>
+                                </div>
+                                <span class="product-category__icon">
+                                    <svg role="presentation" class="icon icon-icon">
+                                        <use xlink:href="images/svg/sprite/sprite-colored.svg#icon-icon5"></use>
+                                    </svg>
+                                </span>
+                            </article>
+                        </div>
+
+                        <div class="col xlarge-one-half">
+                            <article class="product-category style6">
+                                <div class="product-category__vsl"><img src="images/tmp/200x200.gif" alt="" /></div>
+                                <div class="product-category__wrapper">
+                                    <h1 class="like-h3 product-category__header">Bad &amp; Bed</h1>
+                                    <ul class="product-category__list">
+                                        <li>
+                                            <a href="category.html">
+                                                <svg role="presentation" class="icon icon-arrow-right">
+                                                    <use xlink:href="images/svg/sprite/sprite.svg#icon-arrow-right"></use>
+                                                </svg>
+                                                Accessoires blab p a asdkj sdka asdkjdsakadkjs
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="category.html">
+                                                <svg role="presentation" class="icon icon-arrow-right">
+                                                    <use xlink:href="images/svg/sprite/sprite.svg#icon-arrow-right"></use>
+                                                </svg>
+                                                Persoonlijke verzorging
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="category.html">
+                                                <svg role="presentation" class="icon icon-arrow-right">
+                                                    <use xlink:href="images/svg/sprite/sprite.svg#icon-arrow-right"></use>
+                                                </svg>
+                                                Wassen zonder water
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <a href="category.html" class="product-category__more">
+                                        <svg role="presentation" class="icon icon-arrow-right">
+                                            <use xlink:href="images/svg/sprite/sprite.svg#icon-arrow-right"></use>
+                                        </svg>
+                                        Meer Bad &amp; Bed
+                                    </a>
+                                </div>
+                                <span class="product-category__icon">
+                                    <svg role="presentation" class="icon icon-icon">
+                                        <use xlink:href="images/svg/sprite/sprite-colored.svg#icon-icon6"></use>
+                                    </svg>
+                                </span>
+                            </article>
+                        </div>
+
+                    </section>
+
+                </div>
+
+                <div class="p-home__fold">
+                    <div class="l-wrapper">
+
+                        <section class="row eqh-wrapper">
+
+                            <div class="col large-one-third">
+                                <section class="cta -find-store">
+                                    <div class="cta__visual" style="background-image:url(images/service_vind.jpg);">
+                                    </div>
+                                    <div class="cta__wrapper eqh-item">
+                                        <h1 class="cta__hdr">Vind een winkel in de buurt</h1>
+                                        <p>Onze producten worden verkocht in meer dan 100 winkels, ook bij u in de buurt.</p>
+                                        <form method="post" action="#" class="search-box">
+                                            <button type="submit">
+                                                <svg class="icon-search">
+                                                    <use xlink:href="images/svg/sprite/sprite.svg#icon-search"></use>
+                                                </svg>
+                                            </button>
+                                            <div class="input"><input type="search" name="" value="" placeholder="Postcode of plaats…" /></div>
+                                        </form>
+                                    </div>
+                                </section>
+                            </div>
+
+                            <div class="col large-one-third">
+                                <section class="cta">
+                                    <div class="cta__visual" style="background-image:url(images/service_over.jpg);">
+                                    </div>
+                                    <div class="cta__wrapper eqh-item">
+                                        <h1 class="cta__hdr">Blijf op de hoogte</h1>
+                                        <p>Schrijf u in voor de nieuwsbrief en ontvang een Vitility cadeau bij uw volgende bestelling.</p>
+                                        <a href="#" class="btn">
+                                            <i>
+                                                <svg role="presentation" class="icon icon-arrow-right">
+                                                    <use xlink:href="images/svg/sprite/sprite.svg#icon-arrow-right"></use>
+                                                </svg>
+                                            </i>
+                                            <span>Direct inschrijven</span>
+                                        </a>
+                                    </div>
+                                </section>
+                            </div>
+
+                            <div class="col large-one-third">
+                                <section class="cta">
+                                    <div class="cta__visual" style="background-image:url(images/service_welk.jpg);">
+                                    </div>
+                                    <div class="cta__wrapper eqh-item">
+                                        <h1 class="cta__hdr">Wist u dat...</h1>
+                                        <p>Onze producten worden verkocht in meer dan 100 winkels, ook bij u in de buurt.</p>
+                                        <a href="#" class="btn">
+                                            <i>
+                                                <svg role="presentation" class="icon icon-arrow-right">
+                                                    <use xlink:href="images/svg/sprite/sprite.svg#icon-arrow-right"></use>
+                                                </svg>
+                                            </i>
+                                            <span>Lees verder</span>
+                                        </a>
+                                    </div>
+                                </section>
+                            </div>
+
+                        </section>
+
+                    </div>
+                </div>
+
+            </main>
+
+            <footer class="footer-main">
+                <section class="footer-main__payment">
+                    <div class="l-wrapper">
+                        <div class="footer-main__payment__wrapper">
+                            <svg class="icon icon-ideal">
+                                <use xlink:href="images/svg/sprite/sprite-colored.svg#icon-ideal"></use>
+                            </svg>
+                            <svg class="icon icon-mastercard">
+                                <use xlink:href="images/svg/sprite/sprite-colored.svg#icon-mastercard"></use>
+                            </svg>
+                            <svg class="icon icon-visa">
+                                <use xlink:href="images/svg/sprite/sprite-colored.svg#icon-visa"></use>
+                            </svg>
+                            <svg class="icon icon-amex">
+                                <use xlink:href="images/svg/sprite/sprite-colored.svg#icon-amex"></use>
+                            </svg>
+                            <svg class="icon icon-paypal">
+                                <use xlink:href="images/svg/sprite/sprite-colored.svg#icon-paypal"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </section>
+                <div class="l-wrapper">
+                    <div class="row footer-main__help">
+                        <section class="footer-main__help__section col large-one-third">
+                            <h1 class="like-h4 footer-main__help__section__hdr">Klantenservice</h1>
+                            <ul>
+                                <li>
+                                    <a href="text.html">
+                                        <svg role="presentation" class="icon icon-arrow-right">
+                                            <use xlink:href="images/svg/sprite/sprite.svg#icon-arrow-right"></use>
+                                        </svg>
+                                        <span>Verkoopvoorwaarden</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="text.html">
+                                        <svg role="presentation" class="icon icon-arrow-right">
+                                            <use xlink:href="images/svg/sprite/sprite.svg#icon-arrow-right"></use>
+                                        </svg>
+                                        <span>Privacy verklaring</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="text.html">
+                                        <svg role="presentation" class="icon icon-arrow-right">
+                                            <use xlink:href="images/svg/sprite/sprite.svg#icon-arrow-right"></use>
+                                        </svg>
+                                        <span>Contact</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="footer-main__help__section col large-one-third">
+                            <h1 class="like-h4  footer-main__help__section__hdr">Meest gestelde vragen</h1>
+                            <ul>
+                                <li>
+                                    <a href="text.html">
+                                        <svg role="presentation" class="icon icon-arrow-right">
+                                            <use xlink:href="images/svg/sprite/sprite.svg#icon-arrow-right"></use>
+                                        </svg>
+                                        <span>Hoe kan ik betalen bij Vitility?</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="text.html">
+                                        <svg role="presentation" class="icon icon-arrow-right">
+                                            <use xlink:href="images/svg/sprite/sprite.svg#icon-arrow-right"></use>
+                                        </svg>
+                                        <span>Wat zijn de verzendkosten?</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="text.html">
+                                        <svg role="presentation" class="icon icon-arrow-right">
+                                            <use xlink:href="images/svg/sprite/sprite.svg#icon-arrow-right"></use>
+                                        </svg>
+                                        <span>Hoe plaatst ik een bestelling?</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="text.html">
+                                        <svg role="presentation" class="icon icon-arrow-right">
+                                            <use xlink:href="images/svg/sprite/sprite.svg#icon-arrow-right"></use>
+                                        </svg>
+                                        <span>Hoe kan ik retourneren?</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="footer-main__help__section col large-one-third">
+                            <h1 class="like-h4  footer-main__help__section__hdr">Heef u een andere vraag?</h1>
+                            <a href="text.html" class="button darken ask-question">
+                                <i>
+                                    <svg role="presentation" class="icon icon-arrow-right">
+                                        <use xlink:href="images/svg/sprite/sprite.svg#icon-arrow-right"></use>
+                                    </svg>
+                                </i>
+                                <span>Stel hier uw vraag</span>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="text.html">
+                                        <svg role="presentation" class="icon icon-arrow-right">
+                                            <use xlink:href="images/svg/sprite/sprite.svg#icon-arrow-right"></use>
+                                        </svg>
+                                        <span>Bekijk hier alle meegestelde vragen</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                    <aside class="footer-main__contact">
+                        <strong>Vragen?</strong> Bel ons op 0800 - 111 222
+                        <span>Wij zijn bereikbaar op werkdagen van 9.00 tot 19.00 uur</span>
+                    </aside>
+                </div>
+                <div class="footer-meta">
+                    <div class="l-wrapper">
+                        <div class="footer-meta__logo">
+                            <svg class="icon icon-logo">
+                                <use xlink:href="images/svg/sprite/sprite.svg#icon-logo"></use>
+                            </svg>
+                            <span class="text">We make your life easier</span>
+                        </div>
+                        <ul>
+                            <li><a href="text.html">Contact</a></li>
+                            <li><a href="text.html">Over vitility</a></li>
+                            <li><a href="text.html">Dealers</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+
+            <div class="mobile-navigation js-mobile-navigation">
+            </div>
+
+            <div id="sidebar" class="sidebar">
+
+                <section class="sidebar__basket">
+
+                    <header>
+                        <h1 class="like-h2">Winkeltas</h1>
+                        <a href="#">Wijzigen</a>
+                        <a href="#" class="sidebar__basket__close js-sidebar-toggle">
+                            <svg role="presentation" class="icon icon-close">
+                                <use xlink:href="images/svg/sprite/sprite.svg#icon-close"></use>
+                            </svg>
+                        </a>
+                    </header>
+
+                    <article class="product -sidebar" itemscope itemtype="http://schema.org/Product">
+                        <a href="#" class="product__wrapper">
+                            <div class="product__visual">
+                                <img src="images/tmp/75x75.gif" itemprop="image" alt="" />
+                            </div>
+                            <div class="product__content">
+                                <div class="product__content__wrapper">
+                                    <header class="product__header">
+                                        <h1 class="like-h6" itemprop="name">Tabletvergruizer Vitility op meer regels dan we ruimte hebben.</h1>
+                                    </header>
+                                    <div class="product__offer" itemprop="offer" itemscope itemtype="http://schema.org/Offer">
+                                        <meta itemprop="priceCurrency" content="EUR">
+                                        <link itemprop="availability" href="http://schema.org/InStock">
+                                        <s class="product__offer__price -old">&euro;8,95</s>
+                                        <span class="product__offer__price -current">&euro;<span itemprop="price">4,95</span></span>
+                                        <span class="product__offer__amount">10 stuks</span>
+                                    </div>
+                                </div>
+                                <svg role="presentation" class="icon icon-arrow-right">
+                                    <use xlink:href="images/svg/sprite/sprite.svg#icon-arrow-right"></use>
+                                </svg>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="product -sidebar" itemscope itemtype="http://schema.org/Product">
+                        <a href="#" class="product__wrapper">
+                            <div class="product__visual">
+                                <img src="images/tmp/75x75.gif" itemprop="image" alt="" />
+                            </div>
+                            <div class="product__content">
+                                <div class="product__content__wrapper">
+                                    <header class="product__header">
+                                        <h1 class="like-h6" itemprop="name">Tabletvergruizer Vitility op meer regels dan we ruimte hebben.</h1>
+                                    </header>
+                                    <div class="product__offer" itemprop="offer" itemscope itemtype="http://schema.org/Offer">
+                                        <meta itemprop="priceCurrency" content="EUR">
+                                        <link itemprop="availability" href="http://schema.org/InStock">
+                                        <s class="product__offer__price -old">&euro;8,95</s>
+                                        <span class="product__offer__price -current">&euro;<span itemprop="price">4,95</span></span>
+                                        <span class="product__offer__amount">1 stuk</span>
+                                    </div>
+                                </div>
+                                <svg role="presentation" class="icon icon-arrow-right">
+                                    <use xlink:href="images/svg/sprite/sprite.svg#icon-arrow-right"></use>
+                                </svg>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="product -sidebar" itemscope itemtype="http://schema.org/Product">
+                        <a href="#" class="product__wrapper">
+                            <div class="product__visual">
+                                <img src="images/tmp/75x75.gif" itemprop="image" alt="" />
+                            </div>
+                            <div class="product__content">
+                                <div class="product__content__wrapper">
+                                    <header class="product__header">
+                                        <h1 class="like-h6" itemprop="name">Tabletvergruizer Vitility op meer regels dan we ruimte hebben.</h1>
+                                    </header>
+                                    <div class="product__offer" itemprop="offer" itemscope itemtype="http://schema.org/Offer">
+                                        <meta itemprop="priceCurrency" content="EUR">
+                                        <link itemprop="availability" href="http://schema.org/InStock">
+                                        <s class="product__offer__price -old">&euro;8,95</s>
+                                        <span class="product__offer__price -current">&euro;<span itemprop="price">4,95</span></span>
+                                        <span class="product__offer__amount">1 stuk</span>
+                                    </div>
+                                </div>
+                                <svg role="presentation" class="icon icon-arrow-right">
+                                    <use xlink:href="images/svg/sprite/sprite.svg#icon-arrow-right"></use>
+                                </svg>
+                            </div>
+                        </a>
+                    </article>
+
+                    <div class="sidebar__basket__total">
+                        <div class="group">
+                            <span>Artikelen (3)</span>
+                            <span>&euro;17,15</span>
+                        </div>
+                        <div class="group">
+                            <span>Verzendkosten</span>
+                            <span>&euro;<span class="js-shipping_costs" data-url-shipping_costs="ajax/shipping_costs.json">4,95</span></span>
+                        </div>
+                    </div>
+                    <div class="sidebar__basket__total -grandtotal">
+                        <div class="group">
+                            <span>Te betalen</span>
+                            <span>&euro;<span class="js-total">22,10</span></span>
+                        </div>
+                    </div>
+
+                    <div class="submit">
+                        <a href="cart.html" class="button">
+                            <i>
+                                <svg role="presentation" class="icon-arrow-right">
+                                    <use xlink:href="images/svg/sprite/sprite.svg#icon-arrow-right"></use>
+                                </svg>
+                            </i>
+                            <span>Afrekenen</span>
+                        </a>
+                    </div>
+
+                </section>
+
+            </div>
+
+        <!--/doc-->
+        </div>
+
+        <script type="template/mustache" id="tpl-mobile-navigation">
+            <div class="row">
+                <div class="col one-half">
+                    <div class="language-select js-language-select">
+                        {{{language}}}
+                    </div>
+                </div>
+                <div class="col one-half">
+                    <div class="valuta-select js-valuta-select">
+                        {{{valuta}}}
+                    </div>
+                </div>
+            </div>
+            <ol>
+                {{{primary}}}
+                {{{masthead}}}
+            </ol>
+        </script>
+
+        <!-- build:js js/script.min.js -->
+        <script src="js/vendor/svg4everybody.min.js"></script>
+        <script src="js/vendor/jquery-2.1.1.min.js"></script>
+        <script src="js/vendor/jquery.nouislider.min.js"></script>
+        <script src="js/global.js"></script>
+        <script src="js/product.js"></script>
+        <script src="js/category.js"></script>
+        <script src="js/checkout.js"></script>
+        <script src="js/dealer-overview.js"></script>
+        <script src="js/dealer-detail.js"></script>
+        <script src="js/equal-heights.js"></script>
+        <script defer src="js/init.js"></script>
+        <!-- endbuild -->
+
+    </body>
+</html>

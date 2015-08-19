@@ -1,0 +1,17 @@
+.p-checkout {
+
+    &__shipping_address {
+    
+        .js & {
+            display: none;
+        }
+    }
+    
+    .sidebar__basket {
+        display: none;
+        
+        @media #{$xlarge-up} {
+            display: block;
+        }
+    }
+}

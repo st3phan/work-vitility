@@ -1,0 +1,32 @@
+[
+    {
+        "title" : "Breda",
+        "lat" : "51.583070",
+        "lng" : "4.776950",
+        "icon" : "images/marker.png",
+        "infoWindow" : {
+            "content" : "<div class='gmap-info'><h1 class='like-h5'>Breda</h1><p>Straatnaam lana asdgasdg ddddd 123<br />1234 AB Alkmaar<br />012 - 345 60 00</p><a href='#meerinfo' class='more'>Meer informatie</a></div>",
+            "maxWidth": "300"
+        }
+    },
+    {
+        "title" : "Amsterdam",
+        "lat" : "52.370216",
+        "lng" : "4.895168",
+        "icon" : "images/marker.png",
+        "infoWindow" : {
+            "content" : "<div class='gmap-info'><h1 class='like-h5'>Breda</h1><p>Straatnaam 123<br />1234 AB Alkmaar<br />012 - 345 60 00</p><a href='#meerinfo' class='more'>Meer informatie</a></div>",
+            "maxWidth": "300"
+        }
+    },
+    {
+        "title" : "Groningen",
+        "lat" : "53.219383",
+        "lng" : "6.566502",
+        "icon" : "images/marker.png",
+        "infoWindow" : {
+            "content" : "<div class='gmap-info'><h1 class='like-h5'>Breda</h1><p>Straatnaam 123<br />1234 AB Alkmaar<br />012 - 345 60 00</p><a href='#meerinfo' class='more'>Meer informatie</a></div>",
+            "maxWidth": "300"
+        }
+    }
+]

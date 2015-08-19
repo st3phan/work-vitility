@@ -1,0 +1,26 @@
+.carousel {
+    @include background-size(cover);
+    display: none;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    @media #{$medium-up} {
+        height: 300px;
+        margin-top: $distance;
+    }
+    
+    @media #{$large-up} {
+        height: 500px;
+    }
+    
+    @media #{$xlarge-up} {
+        margin-top: 0;
+    }
+    
+    .p-home & {
+        @media #{$medium-up} {
+            display: block;
+        }
+    }
+}

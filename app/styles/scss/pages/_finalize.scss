@@ -1,0 +1,28 @@
+.p-finalize {
+
+    .sidebar__basket {
+        display: none;
+        
+        @media #{$xlarge-up} {
+            display: block;
+        }
+    }
+    
+    &__overview__section {
+        margin-bottom: (-$distance);
+    
+        & + & {
+            margin-top: $distance;
+        }
+    
+        &__header {
+            margin: 0 0 $distance/2;
+            padding: 0 0 $distance/2;
+            border-bottom: 2px solid $mercury;
+        }
+        
+        &__group {
+            margin-bottom: $distance;
+        }
+    }
+}

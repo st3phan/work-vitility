@@ -1,0 +1,44 @@
+table {
+    background: $white;
+    margin: 0 0 $distance;
+    border: 1px solid $alto;
+    border-collapse: separate;
+    border-spacing: 2px;
+    
+    thead {
+        background: $mercury;
+        
+        tr {
+        
+            th, 
+            td {
+                padding: $distance/3 $gutter/2;
+            }
+        }
+    }
+    
+    tfoot {
+        background: $mercury;
+        
+        tr {
+        
+            th, 
+            td {
+                padding: $distance/2 $gutter/2;
+            }
+        }
+    }
+    
+    tr {
+        th,
+        td {
+            padding: $distance/2 $gutter/2;
+        }
+        
+        &.even,
+        &.alt,
+        &:nth-of-type(even) {
+            background: $concrete;
+        }
+    }
+}

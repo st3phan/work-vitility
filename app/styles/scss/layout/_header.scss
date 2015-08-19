@@ -1,0 +1,352 @@
+.masthead {
+    @include box-shadow(inset 0 -1px 1px 0 rgba($black, .25));
+    display: none;
+    background-color: $mercury;
+    line-height: 40px;
+    
+    @media #{$xlarge-up} {
+        display: block;
+    }
+    
+    &__account {
+        @include clear;
+        float: right;
+        font-size: 0;
+        
+        li {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: rem-calc($english);
+            
+            a {
+                display: inline-block;
+                text-decoration: none;
+                
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            
+            & + li {
+                margin: 0 0 0 $gutter/2;
+            
+                &:before {
+                    content: "/";
+                    display: inline-block;
+                    margin-right: $gutter/2;
+                }
+            }
+            
+            &.-where-to-buy {
+                margin: 0 0 0 $gutter;
+                
+                .btn,
+                .button {
+                    vertical-align: middle;
+                    font-size: 10px !important;
+                    
+                    span {
+                        font-size: rem-calc($english);
+                        vertical-align: baseline;
+                    }
+                }
+                
+                &:before {
+                    display: none;  
+                }
+            }
+        }
+    }
+}
+
+.language-select {
+    padding-left: $gutter;
+    font-size: rem-calc($english);
+    
+    @media #{$xlarge-up} {
+        padding-left: 0;
+    }
+    
+    .custom-select {
+    
+        ul li a {
+            color: $white;
+            
+            @media #{$xlarge-up} {
+                color: $sub-header-color;
+            }
+        }
+    }
+
+    a {
+    
+        &:before {
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            width: 24px;
+            height: 24px;
+            margin: 0 5px 0 0;
+            background-size: 100%;
+        }
+    }
+
+    .nl {        
+        &:before {
+            background-image: url(../images/flags/nl.png);
+        }
+    }
+    .fr {        
+        &:before {
+            background-image: url(../images/flags/fr.png);
+        }
+    }
+    .en {        
+        &:before {
+            background-image: url(../images/flags/en.png);
+        }
+    }
+}
+
+.valuta-select {
+    padding-right: $gutter;
+    font-size: rem-calc($english);
+    
+    @media #{$xlarge-up} {
+        padding-right: 0;
+    }
+    
+    .custom-select {
+    
+        ul li a {
+            color: $white;
+            
+            @media #{$xlarge-up} {
+                color: $sub-header-color;
+            }
+        }
+    }
+    
+    .valuta {
+        display: inline-block;
+        font-size: rem-calc($paragon);
+        vertical-align: middle;
+    }
+}
+
+.primary-header {
+    @include clear;
+    position: relative;
+    padding: $distance 0 0;
+    
+    @media #{$xlarge-up} {
+        padding: $distance 0;
+    }
+    
+    &__toggle-navigation {
+        position: relative;
+        float: left;
+        width: 34px;
+        height: 34px;
+        margin-top: -1px;
+        text-align: center;
+        background: $gray;
+        cursor: pointer;
+        
+        @media #{$large-up} {
+            width: 40px;
+            height: 40px;
+            margin-top: 2px;
+        }
+    
+        @media #{$xlarge-up} {
+            display: none;
+        }
+        
+        .icon {
+            @include translate(-50%, -50%);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+    }
+
+    &__brand {
+        @include translateX(-50%);
+        position: absolute;
+        left: 50%;
+    
+        @media #{$xlarge-up} {
+            @include translateX(0);
+            position: static;
+            left: auto;
+            float: left;
+            margin: 6px 0 0 0;
+        }
+        
+        a {
+            display: block;
+            width: 184px;
+            height: 34px;
+            
+            @media #{$large-up} {
+                width: 245px;
+                height: 44px;
+            }
+        }
+    }
+    
+    &__basket {
+        position: relative;
+        float: right;
+        cursor: pointer;
+        
+        @media #{$xlarge-up} {
+            width: 200px;
+            line-height: 1.3;
+            white-space: nowrap;
+        }
+        
+        &__toggle {
+            display: none; 
+            
+            @media #{$xlarge-up} {
+                display: block;
+                position: absolute;
+                top: 50%;
+                right: 0;
+                @include translate(0, -50%);
+                
+                &.-open {
+                    .show-basket & {
+                        display: none;
+                    }
+                }
+                
+                &.-close {
+                    display: none;
+                    
+                    .show-basket & {
+                        display: block;
+                    }
+                }
+            }
+        }
+        
+        &__icon {
+            top: -6px;
+            
+            @media #{$xlarge-up} {
+                float: left;
+                top: 0;
+            }
+            
+            &.-has-items {
+                @extend .primary-header__basket__icon;
+            
+                &:before {
+                    @include setThemeColor(background);
+                    @include translate(-50%, 0);
+                    @include rotate(3deg);
+                    content: '';
+                    z-index: -1;
+                    position: absolute;
+                    top: 5px;
+                    left: 25%;
+                    width: 50%;
+                    height: 30px;
+                    
+                    @media #{$xlarge-up} {
+                        top: 6px;
+                    }
+                }
+            }
+        }
+        
+        &__wrapper {
+            
+            @media #{$xlarge-up} {
+                overflow: hidden;
+                padding: 0 0 0 $gutter/2;
+            }
+        }
+        
+        &__header {
+            display: none;
+            
+            @media #{$xlarge-up} {
+                display: block;
+                color: $gray;
+            }
+        }
+        
+        &__price {
+            display: none;
+            
+            @media #{$xlarge-up} {
+                display: block;
+                color: $sub-header-color;                    
+            }
+        }
+        
+        &__amount {
+            display: none;
+            
+            @media #{$xlarge-up} {
+                display: block;
+                font-size: rem-calc(14);
+                color: #898989;
+            }
+        }
+    }
+    
+    &__search {
+        float: left;
+        width: 100%; /* needed so margins of basket won't collapse */
+        margin: $distance 0 0;
+
+        @media #{$xlarge-up} {
+            @include translate(-50%, -50%);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            float: left;
+            width: 300px;
+            margin: 0;
+        }
+    }
+}
+
+.primary-usps {
+    display: none;
+    
+    @media #{$xlarge-up} {
+        display: block;
+        padding: $distance 0;
+    }
+    
+    ul {
+        @include clear;
+        border-bottom: 2px solid $concrete;
+    }
+            
+    li {
+        font-size: rem-calc(14);
+        
+        @media #{$large-up} {
+            float: left;            
+            height: 50px;
+            line-height: 50px;
+            font-size: rem-calc(18);
+        }
+
+        & + li {
+            margin-top: $distance/4;
+        
+            @media #{$large-up} {
+                margin-top: 0;
+                margin-left: $gutter;
+            }
+        }
+    }
+}

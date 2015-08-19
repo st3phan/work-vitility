@@ -1,0 +1,96 @@
+.product-category {
+    @include box-sizing(border-box);
+    @include box-shadow(0 2px 2px -1px rgba($black, .8));
+    @include clear;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid $concrete;
+    border-bottom: 0;
+    
+    &__vsl {
+        display: none;
+        
+        @media #{$medium-up} {
+            display: block;
+            float: right;
+            width: 200px;
+        }
+        
+        @media #{$large-up} {
+            float: right;
+            width: 200px;
+            overflow: hidden;
+            
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+    
+    &__wrapper {
+        @include box-sizing(border-box);
+        position: relative;
+        overflow: hidden;
+        padding: $distance $gutter 0;
+    }
+    
+    &__header {
+        @include setThemeColor(color, $prefix: style);
+        margin: 0 0 $distance/3;
+        padding: 0 50px 0 0;
+        
+        @media #{$medium-up} {
+            padding-right: 0;
+        }
+    }
+    
+    &__list {
+        
+        li {
+        
+            a {
+                display: block;
+                padding: 2px 0;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                
+                .icon {
+                    margin-right: 2px;
+                    fill: $gray;
+                }
+            }
+        }
+    }
+    
+    &__more {
+        @include setThemeColor(color, $prefix: style);
+        display: block;
+        margin-top: $distance/2;
+        padding: $distance/2 0;
+        border-top: 2px solid $mercury;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        &:hover {
+            @include setThemeColor(color, $prefix: style, $hover: true);
+        }
+        
+        .icon {
+            @include setThemeColor(fill, $prefix: style);
+            margin-right: 2px;
+        }
+    }
+    
+    &__icon {
+        z-index: 10;
+        position: absolute;
+        top: 15px;
+        right: $gutter;
+        
+        @media #{$medium-up} {
+             right: 200-18px;       
+        }
+    }
+}

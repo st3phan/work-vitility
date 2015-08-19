@@ -1,0 +1,16 @@
+.p-faq-overview {
+
+    &__questions {
+        margin-bottom: (-$distance);
+    
+        &__question {
+            @include clear;
+            margin-bottom: $distance;
+            
+            & + & {
+                padding: $distance 0 0;
+                border-top: 2px solid $mercury;
+            }
+        }
+    }
+}

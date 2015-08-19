@@ -1,0 +1,63 @@
+.paging {
+    @include clear;
+    
+    @media #{$medium-up} {
+        margin: $distance*2 0 0;
+    }
+    
+    ul {
+        position: relative;
+        left: 50%;
+        float: left;
+    }
+    
+    li {
+        position: relative;
+        right: 50%;
+        float: left;
+        
+        a {
+            display: none;
+            position: relative;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            margin: 0 4px;
+            text-align: center;
+            color: $silver;
+            
+            @media #{$large-up} {
+                display: block;
+            }
+            
+            &.-active {
+                @extend .knob;
+                @extend .knob.-active;
+            }
+   
+            .no-touch &:hover {
+                color: $gray;
+                
+                .icon {
+                    fill: $gray;
+                }
+            }
+        }
+        
+        .next,
+        .previous,
+        .first,
+        .last {
+            display: block;
+            width: auto;
+            height: auto;
+            @include border-radius(0);
+            @include box-shadow(none);
+            margin: 0 8px;
+            
+            &:before {
+                display: none;
+            }
+        }
+    }
+}

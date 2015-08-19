@@ -1,0 +1,88 @@
+body {
+    font-family: $font-stack;
+    font-weight: normal;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    color: $header-color;
+    line-height: $header-line-height;
+    font-weight: bold;
+}
+
+h1,
+.like-h1 {
+    font-size: rem-calc($double-paragon);
+    margin: 0 0 $distance/2;
+}
+
+h2,
+.like-h2 {
+    font-size: rem-calc($double-english);
+    margin: 0 0 $distance/2;
+}
+
+h3,
+.like-h3 {
+    font-size: rem-calc($double-pica);
+    margin: 0 0 $distance/2;
+}
+
+h4,
+.like-h4 {
+    font-size: rem-calc($paragon);
+    margin: 0 0 $distance/2;
+}
+
+h5,
+.like-h5 {
+    font-size: rem-calc($great-primer);
+    margin: 0 0 $distance/2;
+}
+
+h6,
+.like-h6 {
+    font-size: rem-calc($columbian);
+    margin: 0 0 $distance/2;
+}
+
+p {
+    margin: 0;
+}
+
+.content {
+    margin-bottom: (-$distance);
+    
+    p {
+        margin: 0 0 $distance;
+    }
+    
+    ul,
+    ol {
+        margin-bottom: $distance;
+    }
+    
+    ul li {
+        margin-left: $gutter;
+        list-style-type: square;
+    }
+    
+    ol li {
+        margin-left: $gutter;
+        list-style-type: decimal;
+    }
+    
+    table {
+        width: 100%;
+        
+        th {
+            text-align: left;
+        }
+        
+        td {
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

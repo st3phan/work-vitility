@@ -1,0 +1,154 @@
+[class^="icon"],
+[class*=" icon-"] {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.icon-logo,
+.icon-logo + .svg-fallback {
+    width: inherit;
+    height: inherit;
+    fill: $gray;
+    
+    .footer-meta & {
+        width: 184px;
+        height: 34px;
+        fill: $white;
+    }
+}
+
+.icon-arrow-right {
+    width: 14px;
+    height: 12px;
+    fill: $gray;
+    vertical-align: baseline;
+    
+    .btn &,
+    .button & {
+        width: 19px;
+        height: 17px;
+        fill: $white;
+    }
+}
+
+.icon-triangle-left,
+.icon-triangle-right {
+    width: 8px;
+    height: 16px;
+    fill: $silver;
+}
+
+.icon-search {
+    width: 27px;
+    height: 27px;
+    fill: $white;
+}
+
+.icon-check {
+    @include setThemeColor(fill);
+    width: 22px;
+    height: 18px;
+}
+
+.icon-play {
+    @include setThemeColor(fill);
+    width: 33px;
+    height: 33px;
+}
+
+.icon-hamburger {
+    width: 24px;
+    height: 21px;
+    fill: $white;
+}
+
+.icon-basket {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    background-image: url(../images/svg/min/colored/basket.svg);
+    background-repeat: no-repeat;
+    @include background-size(100% 100%);
+    
+    @media #{$large-up} {
+        width: 61px;
+        height: 61px;    
+    }
+}
+
+.icon-previous,
+.icon-next {
+    width: 19px;
+    height: 17px;
+    fill: $silver;
+}
+
+.icon-first,
+.icon-last {
+    width: 27px;
+    height: 17px;
+    fill: $silver;
+}
+
+.icon-close {
+    width: 14px;
+    height: 14px;
+    fill: $white;
+}
+
+.icon-icon {
+    width: 35px;
+    height: 35px;
+}
+
+/* Payment options */
+
+.icon-ideal {
+    width: 20px;
+    height: 17px;
+    
+    @media #{$large-up} {
+        width: 29px;
+        height: 24px;
+    }
+}
+
+.icon-mastercard {
+    width: 22px;
+    height: 14px;
+    
+    @media #{$large-up} {
+        width: 43px;
+        height: 27px;
+    }
+}
+
+.icon-visa {
+    width: 30px;
+    height: 10px;
+    
+    @media #{$large-up} {
+        width: 60px;
+        height: 19px;
+    }
+}
+
+.icon-amex {
+    width: 20px;
+    height: 20px;
+    
+    @media #{$large-up} {
+        width: 41px;
+        height: 40px;
+    }
+}
+
+.icon-paypal {
+    width: 60px;
+    height: 15px;
+    
+    @media #{$large-up} {
+        width: 119px;
+        height: 30px;
+    }
+}

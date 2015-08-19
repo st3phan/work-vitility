@@ -1,0 +1,101 @@
+{
+    "title" : "Pagina titel",
+    "sub-title" : "Pagina sub title",
+    "products" : [
+        {
+            "name" : "Product 1",
+            "link" : {
+                "product" : "product.html",
+                "basket" : "cart.html"
+            },
+            "image" : "images/tmp/190x190.gif",
+            "price" : {
+                "old" : "123,50",
+                "new" : "99,95"
+            }
+        },
+        {
+            "name" : "Product 2",
+            "link" : {
+                "product" : "product.html",
+                "basket" : "cart.html"
+            },
+            "image" : "images/tmp/190x190.gif",
+            "price" : {
+                "old" : "123,50",
+                "new" : "99,95"
+            }
+        },
+        {
+            "name" : "Product 3",
+            "link" : {
+                "product" : "product.html",
+                "basket" : "cart.html"
+            },
+            "image" : "images/tmp/190x190.gif",
+            "price" : {
+                "old" : "123,50",
+                "new" : "99,95"
+            }
+        }
+    ],
+    "paging" : {
+        "first" : "#",
+        "previous" : "#",
+        "next" : "#",
+        "last" : "#",
+        "pages" : [
+            {
+                "page" : "1",
+                "link" : "?page=1"
+            },
+            {
+                "page" : "12",
+                "link" : "#?page=2"
+            },
+            {
+                "page" : "3",
+                "link" : "#?page=3"
+            },
+            {
+                "page" : "4",
+                "link" : "#?page=4",
+                "active" : "true"
+            },
+            {
+                "page" : "5",
+                "link" : "#?page=5"
+            },
+            {
+                "page" : "6",
+                "link" : "#?page=6"
+            },
+            {
+                "page" : "7",
+                "link" : "#?page=7"
+            },
+            {
+                "page" : "8",
+                "link" : "#?page=8"
+            },
+            {
+                "page" : "9",
+                "link" : "#?page=9"
+            }
+        ]
+    },
+    "sorting" : [
+        {
+            "name" : "Prijs1: laag naar hoog",
+            "link" : "#?sorting=asc"
+        },
+        {
+            "name" : "Prijs2: hoog naar laag",
+            "link" : "#?sorting=desc"
+        },
+        {
+            "name" : "Naam: A-Z",
+            "link" : "#?sorting=desc"
+        }
+    ]
+}

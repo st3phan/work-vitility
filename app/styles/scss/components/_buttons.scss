@@ -1,0 +1,159 @@
+.btn,
+.button {
+    @include setThemeColor(background-color);
+    @include box-shadow(0 2px 2px -1px rgba($black, .8), inset 1px 1px 0 0 rgba($white, .1));
+    @include appearance(none);
+    @include border-radius(0);
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-size: initial;
+    font-weight: normal;
+    text-align: left;
+    border-style: solid;
+    border-width: 0;
+    cursor: pointer;
+    text-decoration: none;
+    white-space: nowrap;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    vertical-align: middle;
+    
+    &:hover {
+        @include setThemeColor(background-color, $lighten: true);
+    }
+        
+    > span {
+        @include box-sizing(border-box);
+        overflow: hidden;
+        display: inline-block;
+        margin: 0 $gutter/2;
+        line-height: inherit;
+        font-size: rem-calc($great-primer);
+    }
+    
+    &.medium {
+        height: 30px;
+        line-height: 30px;
+    }
+
+    // # default button size
+    &, &.large {
+        height: 40px;
+        line-height: 40px;
+    }
+    
+    &.darken {
+        @include setThemeColor(background-color, $darken: true);
+        background-color: $gray;
+
+        &:hover {
+             @include setThemeColor(background-color);
+        }
+    }
+    
+    &.lighten {
+         @include setThemeColor(background-color, $lighten: true);
+         background-color: $grayLight;
+
+        &:hover {
+             @include setThemeColor(background-color);
+        }
+    }
+    
+    &.secondary {
+        background-color: $blue;
+        color: $sub-header-color;
+        
+        &:hover {
+             background-color: $blueLight;
+        }
+        
+        &.darken {
+            background-color: $blueDark;
+            
+            &:hover {
+                background-color: $blue;
+            }
+        }
+        
+        &.lighten {
+            background-color: $blueLight;
+            
+            &:hover {
+                background-color: $blue;
+            }
+        }
+    }
+    
+    &.inverse {
+        @include setThemeColor(color, $darken: true);
+        background-color: $white;
+        color: $grayDark;
+        
+        &:hover {
+            background-color: mix($white, $black, 90%);
+        }
+        
+        .icon {
+            @include setThemeColor(fill);
+        }
+        
+        &.secondary {
+            color: $blueDark;
+            
+            .icon {
+                fill: $blue;
+            }
+        }
+    }
+    
+    i {
+        float: right;
+        position: relative;
+        width: 40px;
+        height: inherit;
+        background-color: rgba($black, .1);
+        
+        [class^="icon"],
+        [class*=" icon"] {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            @include translate(-50%, -50%);
+        }
+    }
+}
+
+.knob {
+    @include border-radius(50% 50%);
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background-color: $alto;
+    text-align: center;
+    color: $white;
+    
+    &.-active {
+        @include setThemeColor(color, $darken: true);
+        @include box-shadow(0 1px 1px 1px rgba($black, .2));
+        background-color: $white;
+        color: $silver;
+        
+        &:before {
+            @include setThemeColor(background-color);
+            @include border-radius(50% 50%);
+            @include box-shadow(inset 0 1px 1px 1px rgba($black, .2));
+            content: '';
+            z-index: -1;
+            position: absolute;
+            top: -4px;
+            right: -4px;
+            bottom: -4px;
+            left: -4px;
+        }
+    }
+}

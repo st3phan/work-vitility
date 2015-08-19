@@ -1,0 +1,47 @@
+.checkout-steps {
+    margin-top: $distance/2;
+    
+    ol {
+    
+        @media #{$medium-up} {
+            @include clear;
+        }
+    }
+    
+    li {
+        color: $silver;
+        
+        @media #{$medium-up} {
+            float: left;
+        }
+        
+        &.-active {
+        
+            a {
+                color: $gray;
+            }
+            
+            .knob {
+                @extend .knob.-active;
+                margin-right: 9px;
+            }
+        }
+        
+        & + li {
+            margin-top: $distance/2;
+            
+            @media #{$medium-up} {
+                margin-top: 0;
+                margin-left: $gutter;
+            }
+        }
+    }
+    
+    a {
+        color: $silver;
+    }
+    
+    .knob {
+        margin-right: 5px;
+    }
+}

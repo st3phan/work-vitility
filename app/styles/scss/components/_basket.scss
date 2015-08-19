@@ -1,0 +1,185 @@
+.basket {
+    @include clear;
+
+    &__wrapper {
+        display: table;
+        width: 100%;
+        
+        & + & {
+            border-top: 2px solid $mercury;
+        }
+    }
+    
+    &__product {
+        display: table-cell;
+        width: 50%;
+        padding: $distance/2 $gutter/2 $distance/2 0;
+        vertical-align: top;
+        
+        .product {
+            margin: (-$distance/2) 0;
+        }
+    }
+    
+    &__product-offer {
+        display: none;
+        width: 1%;
+        padding: $distance/2 0;
+        vertical-align: top;
+        text-align: left;
+        white-space: nowrap;
+        font-weight: bold;
+        
+        @media #{$large-up} {
+            display: table-cell;
+            vertical-align: middle;
+            width: 12.5%;
+        }
+        
+        &__price {
+            @extend .product__offer__price;
+        }
+    }
+    
+    &__product-amount {
+        display: table-cell;
+        width: 25%;
+        padding: $distance/2 0;
+        vertical-align: top;
+        text-align: center;
+        
+        @media #{$medium-up} {
+            width: 12.5%;
+            vertical-align: middle;
+        }
+        
+        input {
+            @include form-element;
+            width: 60px;
+            vertical-align: middle;
+        }
+    }
+    
+    &__product-total {
+        display: table-cell;
+        width: 25%;
+        padding: $distance/2 0;
+        vertical-align: top;
+        text-align: right;
+        font-size: rem-calc($paragon);
+        color: $sub-header-color;
+        font-weight: bold;
+        
+        @media #{$medium-up} {
+            width: 5%;
+            vertical-align: middle;
+        }
+    }
+    
+    &__product-remove {
+        @include setThemeColor(background);
+        display: block;
+        margin: $distance/2 auto 0;
+        font-size: 0;
+        line-height: 0;
+        padding: 5px;
+        border: 0;
+        
+        @media #{$large-up} {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 0 0 $gutter/2;
+        }
+    }
+    
+    &__total {
+        @include clear;
+        padding: $distance/2 0;
+        border-top: 2px solid $mercury;
+        
+        .group {
+        
+            & > span {
+                float: left;
+                clear: right;
+                white-space: nowrap;
+
+                .-cart & {
+                    @media #{$large-up} {
+                        width: 77.5%;
+                        text-align: right;
+                    }
+                }
+                
+                & + span {
+                    float: right;
+                    font-weight: bold;
+                    text-align: right;
+
+                    .-cart & {
+                        @media #{$large-up} {
+                            width: 10%;
+                        }
+                    }
+                }
+            }
+        }
+        
+        &.-grandtotal {
+            font-size: rem-calc($paragon);
+            color: $sub-header-color;
+        }
+    }
+}
+
+
+.sidebar__basket {
+    @include clear;
+    padding: $distance $gutter;
+
+    &.-summary {
+        @include box-shadow(0 2px 2px -1px rgba($black, .8));
+        border-top: 1px solid $mercury;
+    }
+    
+    > header {
+        position: relative;
+        margin: 0 0 $distance;
+        
+        a {
+            @include setThemeColor(color);
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__close {
+        @include setThemeColor(background-color);
+        @include box-shadow(0 2px 2px -1px rgba($black, .8));
+        position: absolute;
+        top: 6px;
+        right: 0;
+        font-size: 0;
+        line-height: 0;
+        padding: 5px;
+    }
+    
+    h1 {
+        margin-bottom: 0;
+    }
+    
+    .product {
+        border-top: 2px solid $mercury;
+    }
+    
+    &__total {
+        @extend .basket__total;
+    }
+    
+    &__checkout {
+        margin: $distance/2 0 0;
+        float: right;
+    }
+}

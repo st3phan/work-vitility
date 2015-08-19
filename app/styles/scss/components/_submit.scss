@@ -1,0 +1,49 @@
+.submit {
+
+    margin: $distance 0 (-$distance/2);
+    
+    @media #{$medium-up} {
+        @include clear;
+        margin-bottom: 0;
+    }
+    
+    .btn,
+    .button {
+        float: right;
+        clear: both;
+        margin-bottom: $distance/2;
+        
+        @media #{$medium-up} {
+            float: right;
+            clear: none;
+            margin-left: $gutter/2;
+        }
+        
+        &.-left {
+            
+            @media #{$medium-up} {
+                float: left;
+                margin-right: $gutter/2;
+                margin-left: 0;
+            }
+        }
+    }
+    
+    a {
+        float: right;
+        line-height: 40px;
+        display: inline-block;
+        vertical-align: middle;
+        
+        &.-left {
+            float: left;
+        }
+    }
+    
+    p {
+        display: block;
+        float: none;
+        clear: both;
+        margin: 0 0 $distance;
+    }
+}
